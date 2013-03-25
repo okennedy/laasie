@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/hugin-mapper/!svn/ver/7/patches
+END
+CPURL.j.patch
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/hugin-mapper/!svn/ver/7/patches/CPURL.j.patch
+END
+TBase64Transport.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/hugin-mapper/!svn/ver/6/patches/TBase64Transport.php
+END

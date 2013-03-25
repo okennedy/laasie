@@ -1,0 +1,16 @@
+-- Mid Term Goals --
+* Design Overhaul
+  - Tool floater -> Toolbar
+  - Replace icons with something decent
+    - http://openiconlibrary.sourceforge.net/gallery2/
+    - http://www.greepit.com/open-source-icons-gcons/
+    - http://www.famfamfam.com/lab/icons/silk/
+* Init Roller/Tracker
+* List-based mini management (integration w/ Init Roller)
+* Status markers - Mini is bleeding, etc...
+
+-- Long Term Goals --
+* Chat Client
+* Scriptability
+* Shared Game Stats (e.g., hp, etc...)
+* Custom module loading (i.e., per-instance whiteboard, minis, grid, etc...)

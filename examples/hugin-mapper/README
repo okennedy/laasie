@@ -1,0 +1,98 @@
+===== INSTALLING =====
+
+--- Prerequisites ---
+
+This project requires :
+
+  * A webserver with PHP support.
+  * MySQL or PostgreSQL with PHP support.
+
+Compiling this project also requires:
+  * The Cappuccino Frameworks & Tools (http://cappuccino.org/download)
+
+--- Installing Hugin from the Distribution ---
+
+  * Untar the file hugin_xx_xx.tgz into a web-accessible directory. 
+  * Navigate to http://[path to hugin directory] and follow the instructions
+  * There is no step 3!
+
+--- Installing Hugin from SVN  ---
+
+  * Check out hugin into a web-accessible directory
+  * Install the latest frameworks into the build directory
+      cd hugin; 
+      capp gen . -f --force;
+  * Navigate to http://[path to hugin directory] and follow the instructions
+
+--- Building Hugin ---
+
+A makefile is provided to create optimized versions of Hugin.
+  make debug
+    or
+  make release
+
+The resulting Hugin is placed in Build.
+
+===== Bugfix Notes =====
+
+I've encountered a problem when compiling JSC.  To fix
+  cd narwhal/packages/narwhal-jsc/deps/libedit-xxx;
+  autoreconf --force --install; 
+  ./configure; 
+  make;
+From this point, resume the compilation as normal
+  cd ../../; make webkit
+
+===== Version History =====
+* b1_81
+  * [improvement] Changes to the Setup script should make debugging setup issues
+              a little easier.
+  * [improvement] Updated to Cappuccino 0.9.5 frameworks
+    * [bugfix] Fixed broken gridlines, line tool, and pencil tool due to changes
+               in the API for CGContextStrokeLineSegments.
+    * [bugfix] Fixed broken line and eraser tools due to changes in the way in
+               which static methods cascade through the class hierarchy.
+  * [bugfix] Miniatures window now loads properly in Firefox
+  * [bugfix] Eraser, Spray, Pencil, and Line tools now scale properly with the 
+             rest of the map.
+  * [improvement] Updated tool icons with graphics from the Oxygen open source 
+                  icon set.
+  * [feature] Added module to support the use of web-based chat clients (like
+              qwebirc).
+  * [improvement] Massive updates to the login and instance selection process.  
+    * [improvement] Users now always have an opportunity to log in, even if they 
+                    are using a jump link.
+    * [improvement] In most browsers, the URL will now update to the jump link
+                    for an instance when entering the instance.
+    * [improvement] User logins can now be stored in a cookie
+    * [feature] Instance management now includes a more intuitive permissions
+                user interface.
+    * [improvement] Reworked instance selection interface.
+
+* b1_72
+  * Support for Backdrops!: See the Windows -> Backdrops menu item.
+  * Misc bugfixes
+    - Fixed a bug in the ICON db backend where data values equal to integer 0 would be dropped from read results
+    - The ICON backend now properly handles full reloads of state that has been most recently deleted
+    - The Mini module now triggers a display refresh after a mini has been removed
+    - The Mini module now deletes all minis correctly
+* b1_67
+  * Login Panel
+    - Instance icons now grow to fill the square
+    - Account creation now possible
+    - Instance creation/management now possible
+  * Grid Module
+    - Scaling is now supported; the UI has options for: 50%, 75%, 100%, and 200%
+  * Mini Module
+    - Minis are now labeled
+    - Mini icons now grow to fill the mini square (and are inset slightly)
+    - Mini prototypes can now be deleted from the UI
+  * Whiteboard Module
+    - Fixed a minor bug related to scaling
+    - Added "spray" tool
+  * Initiative Module
+    - Added module for shared initiative tracking.
+  * Save/Restore Module
+    - Added module for saving and restoring whiteboard/mini/etc... state
+  * Zone Module
+    - Created a module for defining/measuring out and sharing spell zones

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/hugin-mapper/!svn/ver/88/Login
+END
+LoginPanel.j
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/hugin-mapper/!svn/ver/87/Login/LoginPanel.j
+END
+CreateAccountManager.j
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/hugin-mapper/!svn/ver/81/Login/CreateAccountManager.j
+END
+InstanceEditor.j
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/hugin-mapper/!svn/ver/86/Login/InstanceEditor.j
+END
+EditAccountManager.j
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/hugin-mapper/!svn/ver/88/Login/EditAccountManager.j
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/hugin-mapper/!svn/ver/81/Login/Info.plist
+END
+InstanceUserList.j
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/hugin-mapper/!svn/ver/81/Login/InstanceUserList.j
+END
+InstancePicker.j
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/hugin-mapper/!svn/ver/88/Login/InstancePicker.j
+END
